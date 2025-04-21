@@ -1,0 +1,14 @@
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\bin\Debug\net8.0\InventoryTracker.exe
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\bin\Debug\net8.0\InventoryTracker.deps.json
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\bin\Debug\net8.0\InventoryTracker.runtimeconfig.json
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\bin\Debug\net8.0\InventoryTracker.dll
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\bin\Debug\net8.0\InventoryTracker.pdb
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\obj\Debug\net8.0\InventoryTracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\obj\Debug\net8.0\InventoryTracker.AssemblyInfoInputs.cache
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\obj\Debug\net8.0\InventoryTracker.AssemblyInfo.cs
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\obj\Debug\net8.0\InventoryTracker.csproj.CoreCompileInputs.cache
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\obj\Debug\net8.0\InventoryTracker.dll
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\obj\Debug\net8.0\refint\InventoryTracker.dll
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\obj\Debug\net8.0\InventoryTracker.pdb
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\obj\Debug\net8.0\InventoryTracker.genruntimeconfig.cache
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\obj\Debug\net8.0\ref\InventoryTracker.dll
