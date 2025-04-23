@@ -29,17 +29,23 @@ namespace InventoryTracker
             {
                 InventoryItem item = p.Category switch
                 {
+
                     ProductCategory.Food => new FoodItem(),
                     ProductCategory.Electronics => new ElectronicItem(),
                     ProductCategory.Construction => new ConstructionItem(),
                     ProductCategory.Cleaning => new CleaningItem(),
                     _ => throw new Exception("Invalid category")
+                    
                 };
+
                 item.Name = p.Name;
                 item.Price = p.Price;
                 item.ItemID = p.ItemID;
                 item.Category = p.Category;
+                item.Description = p.Description;
+                item.CreatedDate = p.CreatedDate;
                 return item;
+
             }).ToList();
         }
 
@@ -47,10 +53,14 @@ namespace InventoryTracker
         {
             var raw = Products.Select(p => new RawProduct
             {
+
                 Name = p.Name,
                 Price = p.Price,
                 ItemID = p.ItemID,
-                Category = p.Category
+                Category = p.Category,
+                Description = p.Description,
+                CreatedDate = p.CreatedDate
+
             }).ToList();
 
             var json = JsonSerializer.Serialize(raw, new JsonSerializerOptions { WriteIndented = true });
@@ -61,23 +71,27 @@ namespace InventoryTracker
         {
             if (Products.Any(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase)))
             {
+
                 throw new Exception($"A product with the name '{name}' already exists.");
+
             }
 
             InventoryItem item = category switch
             {
+
                 ProductCategory.Food => new FoodItem(),
                 ProductCategory.Electronics => new ElectronicItem(),
                 ProductCategory.Construction => new ConstructionItem(),
                 ProductCategory.Cleaning => new CleaningItem(),
                 _ => throw new ArgumentException("Invalid category")
-            };
 
+            };
 
             item.Name = name;
             item.Price = price;
             item.Category = category;
             item.ItemID = rand.Next(1000000, 9999999);
+            item.CreatedDate = DateTime.Now;
 
             Products.Add(item);
             await SaveToJsonAsync();
@@ -86,12 +100,16 @@ namespace InventoryTracker
 
         public static InventoryItem FindProductByName(string name)
         {
+
             return Products.FirstOrDefault(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+
         }
 
         public static List<InventoryItem> FilterByCategory(ProductCategory category)
         {
+
             return Products.Where(p => p.Category == category).ToList();
+
         }
 
         public static bool DeleteProductByName(string name)
@@ -99,19 +117,25 @@ namespace InventoryTracker
             var product = Products.FirstOrDefault(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
             if (product != null)
             {
+
                 Products.Remove(product);
                 SaveToJsonAsync().Wait();
                 return true;
+
             }
             return false;
         }
 
         private class RawProduct
         {
+
             public string Name { get; set; }
             public decimal Price { get; set; }
             public int ItemID { get; set; }
             public ProductCategory Category { get; set; }
+            public string Description { get; set; }
+            public DateTime CreatedDate { get; set; }
+
         }
     }
 }

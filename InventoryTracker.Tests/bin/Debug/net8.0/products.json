@@ -2,7 +2,9 @@
   {
     "Name": "TestTV",
     "Price": 299.99,
-    "ItemID": 1309949,
-    "Category": 1
+    "ItemID": 1146862,
+    "Category": 1,
+    "Description": null,
+    "CreatedDate": "2025-04-23T00:53:09.7694034-06:00"
   }
 ]

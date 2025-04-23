@@ -161,3 +161,4 @@ C:\Users\gusta\FinaldeobjectGM\InventoryTracker.Tests\obj\Debug\net8.0\refint\In
 C:\Users\gusta\FinaldeobjectGM\InventoryTracker.Tests\obj\Debug\net8.0\InventoryTracker.Tests.pdb
 C:\Users\gusta\FinaldeobjectGM\InventoryTracker.Tests\obj\Debug\net8.0\InventoryTracker.Tests.genruntimeconfig.cache
 C:\Users\gusta\FinaldeobjectGM\InventoryTracker.Tests\obj\Debug\net8.0\ref\InventoryTracker.Tests.dll
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker.Tests\obj\Debug\net8.0\InventoryTracker.Tests.sourcelink.json

@@ -12,3 +12,4 @@ C:\Users\gusta\FinaldeobjectGM\InventoryTracker\obj\Debug\net8.0\refint\Inventor
 C:\Users\gusta\FinaldeobjectGM\InventoryTracker\obj\Debug\net8.0\InventoryTracker.pdb
 C:\Users\gusta\FinaldeobjectGM\InventoryTracker\obj\Debug\net8.0\InventoryTracker.genruntimeconfig.cache
 C:\Users\gusta\FinaldeobjectGM\InventoryTracker\obj\Debug\net8.0\ref\InventoryTracker.dll
+C:\Users\gusta\FinaldeobjectGM\InventoryTracker\obj\Debug\net8.0\InventoryTracker.sourcelink.json
